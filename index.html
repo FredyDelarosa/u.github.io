@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Operations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Operaciones con Grafos</h1>
+
+        <!-- Formulario para agregar ciudades (vértices) -->
+        <form id="addVertexForm">
+            <label for="vertexName">Agregar Ciudad:</label>
+            <input type="text" id="vertexName" placeholder="Nombre de la ciudad" required>
+            <button type="submit">Agregar Ciudad</button>
+        </form>
+
+        <!-- Formulario para agregar rutas (aristas) -->
+        <form id="addEdgeForm">
+            <label for="startVertex">Ciudad de Inicio:</label>
+            <input type="text" id="startVertex" placeholder="Ciudad inicial" required>
+            <label for="endVertex">Ciudad de Destino:</label>
+            <input type="text" id="endVertex" placeholder="Ciudad destino" required>
+            <label for="weight">Distancia en Kilómetros:</label>
+            <input type="number" id="weight" placeholder="Distancia en km">
+            <button type="submit">Agregar Ruta</button>
+        </form>
+
+        <!-- Botón para realizar recorrido en profundidad (DFS) -->
+        <button id="dfsBtn">Recorrido en Profundidad (DFS)</button>
+
+        <!-- Resultados del recorrido -->
+        <div id="resultContainer">
+            <!-- Aquí se mostrarán los resultados -->
+        </div>
+    </div>
+
+    <script type="module" src="/src/controllers/Script.mjs"></script>
+</body>
+</html>
